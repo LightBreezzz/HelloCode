@@ -37,15 +37,33 @@ int year = Method3();
 
 // Vid4
 
+// string Method4(int count, string Text)
+// {
+//     int i = 0;
+//     string result = String.Empty;
+
+//     while (i < count)
+//     {
+//         result = result + Text;
+//         i++;
+//     }
+//     return result;
+// }
+
+// string res = Method4(10, "z");
+// Console.WriteLine(res);
+
+
+
+// For
+
 string Method4(int count, string Text)
 {
-    int i = 0;
     string result = String.Empty;
-
-    while (i < count)
+    for(int i = 0; i < count; i++)
     {
         result = result + Text;
-        i++;
+
     }
     return result;
 }
