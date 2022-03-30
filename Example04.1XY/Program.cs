@@ -7,7 +7,7 @@ if (X > 0 && Y > 0)
 {
     Console.WriteLine("Первая чктвердь");
 }
-else if (X > 0 && Y < 0)
+else if (X < 0 && Y > 0)
 {
     Console.WriteLine("Вторая чктвердь");
 }
@@ -15,7 +15,7 @@ else if (X < 0 && Y < 0)
 {
     Console.WriteLine("Третья чктвердь");
 }
-else if (X < 0 && Y > 0)
+else if (X > 0 && Y < 0)
 {
     Console.WriteLine("Четвертая чктвердь");
 }
