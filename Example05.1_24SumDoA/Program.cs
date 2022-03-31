@@ -8,4 +8,4 @@ while (count <= number)
     result += count;
     count++;
 }
-System.Console.WriteLine(result);
+System.Console.WriteLine($"Сумма чисел от 1 до {number} = {result} ");
