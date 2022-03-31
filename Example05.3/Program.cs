@@ -15,10 +15,17 @@ int [] makeArray(int [] array)
 
 void printArray(int [] array)
 {
+    Console.Write("[");
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write(array[i] + " ");
+        Console.Write(array[i]);
+        if (i < array.Length -1)
+        {
+            Console.Write(",");
+        }
     }
+    Console.Write("]");
+    Console.WriteLine();
 }
 
 int[] arr = new int[8];
