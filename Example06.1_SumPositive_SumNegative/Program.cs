@@ -8,6 +8,25 @@
     return arrayOfNumbers;
 }
 
+int GetSumOfNegativeOrPositive(int[] arrayOfNumbers, bool isNegative)
+{
+    int positiveSum = 0;
+    int multiplayer = 1;
+    if (isNegative)
+    {
+        multiplayer = -1;
+    }
+    for (int i = 0; i < arrayOfNumbers.Length ; i++)
+    {
+        if (arrayOfNumbers[i] * multiplayer > 0)
+        {
+            positiveSum += arrayOfNumbers[i];
+        }
+    }
+    return positiveSum;
+}
+
+/*
 int GetPositiveSumElementOfArray(int[] arrayOfNumbers)
 {
         int positiveSum = 0;
@@ -32,6 +51,7 @@ int GetNegativeSumElementOfArray(int[] arrayOfNumbers)
         }
         return negativeSum;
 }
+*/
 void printArray(int[] arrayOfNumbers)
 {
     Console.Write("[");
@@ -47,8 +67,8 @@ void printArray(int[] arrayOfNumbers)
 }
 
 int[] arrayOfNumbers = GetArrayOfNumber(12,9);
-int positiveSum = GetPositiveSumElementOfArray(arrayOfNumbers);
-int negativeSum = GetNegativeSumElementOfArray(arrayOfNumbers);
+int positiveSum = GetSumOfNegativeOrPositive(arrayOfNumbers, true);
+int negativeSum = GetSumOfNegativeOrPositive(arrayOfNumbers, false);
 Console.WriteLine("В массиве:");
 printArray(arrayOfNumbers);
 Console.WriteLine($"Сумма положительных {positiveSum}, сумма отрицательных {negativeSum}");
