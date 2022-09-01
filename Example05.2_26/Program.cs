@@ -5,7 +5,7 @@
     {
         number /= 10;
         NumberOfDigit++;
-        //Console.WriteLine(number);
+        Console.WriteLine(number);
     }
     return NumberOfDigit;
 }

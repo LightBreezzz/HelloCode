@@ -45,6 +45,8 @@ void printArray(int[] arrayOfNumbers)
     Console.WriteLine("]");
 }
 
-int[] arr = {1,5,6,9,8};
-int[] res = GetMultiplayOfArray (arr);
+int[] array = GetArrayOfNumber(6);
+int[] res = GetMultiplayOfArray(array);
+
+printArray(array);
 printArray(res);
