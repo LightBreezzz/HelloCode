@@ -1,4 +1,4 @@
-﻿int Factorial (int n)
+﻿double Factorial (int n)
 {
     // 1! = 1
     // 0! = 1
@@ -7,6 +7,6 @@
 }
 for (int i = 1; i < 40; i++)
 {
-    Console.WriteLine(Factorial(i));
+    Console.WriteLine($"{i}! = {Factorial(i)}");
     
 }
